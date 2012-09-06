@@ -1,0 +1,9 @@
+# -*- mode: cperl-mode -*-
+# name: strict
+# key: strict
+# --
+#! /usr/bin/perl
+
+use strict;
+use warnings;
+use Data::Printer;
