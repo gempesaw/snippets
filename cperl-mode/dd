@@ -1,0 +1,6 @@
+# -*- mode: cperl -*-
+# name: dd
+# key: dd
+# --
+use Data::Printer;
+use Data::Dumper;

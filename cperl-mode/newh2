@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: newh2
+# key: newh2
+# --
+my $browser = new HoneyDew2(BaseUrl => $hostname,
+                            ScenarioFile => $feature,
+                            BrowserType => $browserType,
+                            WithSauceLabs => $withSauceLabs,
+                            Debug => $debug,
+                            LocalSel => $localSel,
+                            Output => $outputFile,
+                           );
