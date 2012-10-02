@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: feature
+# key: feature
+# --
+Feature: $1
+
+ Scenario: $2
+
+ Given I am on the $0 page
