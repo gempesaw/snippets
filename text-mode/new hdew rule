@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: new hdew rule
+# key: hdewli
+# --
+<li>
+  <img src="./Copy.png" alt="Copy this rule to your clipboard!" title="Copy this rule to your clipboard!" />
+  <span>$1</span>
+  <ul>
+    <li>$0</li>
+  </ul>
+</li>
