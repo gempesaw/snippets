@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: tail all catalina and follow
+# key: tail
+# --
+tail -n +0 -f /opt/tomcat/logs/catalina.out
