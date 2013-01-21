@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: has
+# key: has
+# --
+has '$1' => (
+    is => '$2',
+    isa => '$3',
+    );

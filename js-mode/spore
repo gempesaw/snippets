@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: spore
+# key: spore
+# --
+"$1" : {
+                "path" : "$2",
+                "method" : "$3",
+                "required_params" : [
+                "$4"
+                ],
+                "authentication": $5,
+                "description" : "$6"
+},
+$0
