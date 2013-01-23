@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: tm
+# key: tm
+# --
+#! /usr/bin/perl
+
+use strict;
+use warnings;
+use Data::Printer;
+use Test::more tests => 1;
+
+use lib ("/opt/restApiTesting/lib");
+
+BEGIN {
+    unless (use_ok('$1'))
+    {
+        BAIL_OUT("Couldn't load $1");
+        exit;
+    }
+}
+$0
