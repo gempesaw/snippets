@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: jira
+# key: jira
+# --
+[https://arnoldmedia.jira.com/browse/$1](https://arnoldmedia.jira.com/browse/$1)$0
