@@ -1,9 +1,10 @@
 # -*- mode: snippet -*-
 # name: feature
-# key: feature
+# key: ft
 # --
-Feature: $1
+Feature: $2
+$1Scenario: $3
 
- Scenario: $2
-
- Given I am on the $0 page
+$1Given I am on the $4 page
+$1$1$1When $5
+$1$1$1$1$1Then $6
