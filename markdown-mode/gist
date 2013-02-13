@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: gist
+# key: gist
+# --
+<script src="https://gist.github.com/gempesaw/$0.js"></script>
