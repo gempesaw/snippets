@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: rule
+# key: rule
+# --
+
+if ($string =~ /$1/)
+{
+    my $$2 = \$1;
+    $status = $browser->$3($$2);
+    $ruleNumber = "$0";
+    return(printMessage($original, "$status", $ruleNumber, $endOnFail));
+}
