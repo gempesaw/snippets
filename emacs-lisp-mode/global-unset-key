@@ -2,4 +2,5 @@
 # name: global-unset-key
 # key: guk
 # --
-(global-unset-key (kbd "$0"))
+(global-unset-key (kbd "$1"))
+(global-set-key (kbd "$1") '$0)
