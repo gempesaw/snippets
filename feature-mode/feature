@@ -3,7 +3,7 @@
 # key: ft
 # --
 Feature: $2
-$1Scenario: $3
+$1Scenario: $2
 
 $1Given I am on the $4 page
 $1$1$1When $5
