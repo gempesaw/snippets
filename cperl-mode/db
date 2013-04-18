@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: db
+# key: db
+# --
+use Data::Printer;
+use Data::Dumper;
+
+p $1;
+
+$DB::single=2;
+
+die "bye\n";$0
