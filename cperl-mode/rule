@@ -3,10 +3,15 @@
 # key: rule
 # --
 
+=head2 $1
+
+$2
+=cut
+
 if ($string =~ /$1/)
 {
-    my $$2 = \$1;
-    $status = $browser->$3($$2);
+    # my $$3 = \$1;
+    # $status = $browser->$4($$3);
     $ruleNumber = "$0";
     return(printMessage($original, "$status", $ruleNumber, $endOnFail));
 }
