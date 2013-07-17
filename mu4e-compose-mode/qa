@@ -2,4 +2,6 @@
 # name: qa
 # key: qa
 # --
-$0: Deployed to QA and Army.QA; static assets will be complete in 5-10m.
+QA and Army.QA will be down for the next 10 minutes while we deploy this build. Static assets should be done in 15 minutes.$0toni@sharecare.com, chall@sharecare.com, mmoore@sharecare.com
+
+Thanks!
