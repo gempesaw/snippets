@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: input-css-locator
+# key: cssloc
+# --
+The $0input is a L<CSS locator|https://arnoldmedia.jira.com/wiki/display/QA/CSS+Selectors+And+You>.
