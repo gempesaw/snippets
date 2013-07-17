@@ -2,9 +2,12 @@
 # name: feature
 # key: ft
 # --
-Feature: $2
-$1Scenario: $2
+Feature: whee
+http://localhost
+chrome webdriver
 
-$1Given I am on the $4 page
-$1$1$1When $5
-$1$1$1$1$1Then $6
+$1Scenario: whee
+
+$1Given I am on the /$2 page
+$1$1$1When $3
+$1$1$1$1$1Then $4
