@@ -4,3 +4,5 @@
 # --
 use Data::Printer;
 use Data::Dumper;
+
+p $0;
