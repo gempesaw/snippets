@@ -2,6 +2,6 @@
 # name: qa
 # key: qa
 # --
-QA and Army.QA will be down for the next 10 minutes while we deploy this build. Static assets should be done in 15 minutes.
+QA and Army.QA will be down until around `(format-time-string "%l:%M%p" (time-add (current-time) (seconds-to-time 600)))` while we deploy this build. Static assets should be done by `(format-time-string "%l:%M%p" (time-add (current-time) (seconds-to-time 900)))`.
 
 Thanks!
