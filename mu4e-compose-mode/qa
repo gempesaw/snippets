@@ -2,6 +2,11 @@
 # name: qa
 # key: qa
 # --
-QA and Army.QA will be down until around `(format-time-string "%l:%M%p" (time-add (current-time) (seconds-to-time 600)))` while we deploy this build. Static assets should be done by `(format-time-string "%l:%M%p" (time-add (current-time) (seconds-to-time 900)))`.
+QA and Army.QA will be down until around `(format-time-string "%I:%M%p" (time-add (current-time) (seconds-to-time 600)))` while we deploy this build. Static assets should be done by `(format-time-string "%I:%M%p" (time-add (current-time) (seconds-to-time 900)))`.
 
 Thanks!
+
+`(insert
+ (with-temp-buffer
+   (insert-file-contents (concat (s-second-half " " (pwd)) ".emacs.d/snippets/mu4e-compose-mode/sig"))
+   (s-second-half "# --\n" (buffer-string))))`
