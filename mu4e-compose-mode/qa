@@ -10,3 +10,4 @@ Thanks!
  (with-temp-buffer
    (insert-file-contents (concat (s-second-half " " (pwd)) ".emacs.d/snippets/mu4e-compose-mode/sig"))
    (s-second-half "# --\n" (buffer-string))))`
+$0
