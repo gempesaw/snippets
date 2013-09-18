@@ -1,8 +1,12 @@
 # -*- mode: snippet -*-
-# name: example
-# key: example
+# name: exa
+# key: exa
 # --
 <h3>$1</h3>
 <div>
-  <p>$0</p>
+  <p>
+    $0
+    <pre><code>
+    </code></pre>
+  </p>
 </div>
