@@ -2,5 +2,4 @@
 # name: pc
 # key: pc
 # --
-<pre><code>$0
-</code></pre>
+<div class="code"><pre><code>$0</code></pre></div>
