@@ -5,8 +5,7 @@
 <h3>$1</h3>
 <div>
   <p>
-    $0
-    <pre><code>
-    </code></pre>
+    $2
+    <div class="code"><pre><code>$0</code></pre></div>
   </p>
 </div>
