@@ -13,6 +13,5 @@ if ($string =~ /$1/)
 {
     # my $$3 = \$1;
     # $status = $browser->$4($$3);
-    $ruleNumber = "$0";
-    return(printMessage($original, "$status", $ruleNumber, $endOnFail));
+    return(printMessage($original, "$status", $0, $endOnFail, $browser));
 }
