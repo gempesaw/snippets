@@ -2,7 +2,7 @@
 # name: qa
 # key: qa
 # --
-QA and Army.QA will be down until around `(format-time-string "%I:%M%p" (time-add (current-time) (seconds-to-time 600)))` while we deploy this build. Static assets should be done by `(format-time-string "%I:%M%p" (time-add (current-time) (seconds-to-time 900)))`.
+QA will be down until around `(s-chop-prefix "0" (format-time-string "%I:%M%p" (time-add (current-time) (seconds-to-time 600))))` while we deploy this build. Static assets should be done by `(s-chop-prefix "0" (format-time-string "%I:%M%p" (time-add (current-time) (seconds-to-time 900))))`.
 
 Thanks!
 
