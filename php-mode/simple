@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: simple
+# key: simple
+# --
+<?php
+error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
+ini_set("display_errors", 1);
+require dirname(__FILE__) . '../htdocs/vendor/autoload.php';
+require_once(dirname(__FILE__) . '/simpletest/autorun.php');
+
+class $1 extends UnitTestCase {
+    function test$2() {
+        $this->assertEqual(true, true, "$0");
+    }
+}
+
+?>
