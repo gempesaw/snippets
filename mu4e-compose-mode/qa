@@ -2,7 +2,9 @@
 # name: qa
 # key: qa
 # --
-QA will be down until around `(s-chop-prefix "0" (format-time-string "%I:%M%p" (time-add (current-time) (seconds-to-time 600))))` while we deploy this build. Static assets should be done by `(s-chop-prefix "0" (format-time-string "%I:%M%p" (time-add (current-time) (seconds-to-time 900))))`.
+Build #`sc-deploy-number` was deployed to `sc-deploy-environment` at `sc-deploy-time`. Static assets should be done by `(s-chop-prefix "0" (format-time-string "%I:%M%p" (time-add (current-time) (seconds-to-time 300))))`.
+
+Please test your tickets.
 
 Thanks!
 
