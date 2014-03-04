@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: ffn
+# key: ffn
+# --
+function ($1) {
+    $0
+})

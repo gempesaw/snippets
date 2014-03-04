@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: directive
+# key: ngd
+# --
+'use strict';
+
+angular.module('honeydew')
+    .directive('$1', function ($2) {
+        return {
+            templateUrl: '',
+            replace: true,
+            restrict: 'E',
+            link: function (scope, element, attrs) {
+                $0
+            }
+        };
+    });
