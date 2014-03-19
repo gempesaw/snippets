@@ -1,0 +1,5 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: bu
+# key: bu
+# --
+brew uninstall $1 && brew install $1$0
