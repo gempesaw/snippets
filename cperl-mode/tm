@@ -6,10 +6,7 @@
 
 use strict;
 use warnings;
-use Data::Printer;
-use Test::More tests => 1;
-
-use lib ("/opt/restApiTesting/lib");
+use Test::More;
 
 BEGIN {
     unless (use_ok('$1'))
@@ -18,4 +15,7 @@ BEGIN {
         exit;
     }
 }
+
 $0
+
+done_testing;
