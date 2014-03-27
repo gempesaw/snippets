@@ -1,0 +1,5 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: ec
+# key: ec
+# --
+\`echo "$0" >> /opt/honeydew/bin/job.log\`;
