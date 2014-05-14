@@ -1,0 +1,24 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: ctrltest
+# key: ctrltest
+# --
+'use strict';
+
+describe('$1', function () {
+    var httpMock, scope, $1;
+
+    beforeEach(module('honeydew'));
+
+    beforeEach(inject(function ($controller, $rootScope, $httpBackend) {
+        httpMock = $httpBackend;
+        scope = $rootScope.$new();
+
+        $1$2 = $controller('$1', {
+            $scope: scope
+        });
+    }));
+
+    it('should $0', function () {
+
+    });
+});
