@@ -1,0 +1,25 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: phptest
+# key: phptest
+# --
+<?php
+error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
+ini_set("display_errors", 1);
+require(dirname(__FILE__) . './../vendor/autoload.php');
+require_once(dirname(__FILE__) . './../vendor/simpletest/simpletest/autorun.php');
+
+class $1Tests extends UnitTestCase {
+    protected $baseUrl = "http://localhost/rest.php/$1";
+    protected $basePath = "/opt/honeydew";
+
+    public function __construct() {
+        $2
+    }
+
+    function test$3() {
+        $response = \Httpful\Request::get($this->baseUrl . "$0")->send();
+        print_r($response);
+    }
+}
+
+?>
