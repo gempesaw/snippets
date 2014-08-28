@@ -8,9 +8,8 @@ use strict;
 use warnings;
 use Test::More;
 
-BEGIN {
-    unless (use_ok('$1'))
-    {
+BEGIN: {
+    unless (use_ok('$1')) {
         BAIL_OUT("Couldn't load $1");
         exit;
     }
