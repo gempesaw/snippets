@@ -1,0 +1,21 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: endp
+# key: endp
+# binding: direct-keybinding
+# --
+=method $1 ($2)
+
+$3
+
+    $appium->$1;
+
+=cut
+
+sub $1 {
+    my ($self) = @_;
+
+    my $res = { command => '$1' };
+    my $params = {};
+    $0
+    return $self->_execute_command( $res, $params );
+}
