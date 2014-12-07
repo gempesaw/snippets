@@ -2,7 +2,6 @@
 # name: rule
 # key: rule
 # --
-
 =head2 $1
 
 $2
@@ -12,5 +11,5 @@ $2
 if ($string =~ /$1/) {
     # my $$3 = \$1;
     # $status = $browser->$4($$3);
-    return(printMessage($original, "$status", $0, $endOnFail, $browser));
+    return(printMessage($original, $status, "XXX", $endOnFail, $browser));
 }
