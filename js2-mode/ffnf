@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
-# name: ffn
-# key: ffn
+# name: ffnf
+# key: ffnf
 # --
 ($2) => {
     $0
-})$1
+}$1
