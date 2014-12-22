@@ -2,6 +2,6 @@
 # name: it
 # key: it
 # --
-it('should $1', () => {
+iit('should $1', () => {
     $0
 });
