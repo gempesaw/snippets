@@ -1,0 +1,11 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: ngc
+# key: ngc
+# binding: direct-keybinding
+# --
+'use strict';
+
+angular.module('honeydew')
+    .controller('$1', function ($2) {
+        $0
+    });

@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: directive
+# name: ngd
 # key: ngd
 # --
 'use strict';

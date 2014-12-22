@@ -1,0 +1,21 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: ngdt
+# key: ngdt
+# binding: direct-keybinding
+# --
+describe('$1 directive', () => {
+    var elm,
+        scope;
+
+    beforeEach(module('honeydew'));
+    beforeEach(module('tpl'));
+
+    beforeEach(inject( ($compile, $rootScope) => {
+        elm = angular.element($2);
+        scope = $rootScope;
+        compile(elm)(scope);
+        scope.$digest();
+    }));
+
+    it$0
+});

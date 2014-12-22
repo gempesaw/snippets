@@ -1,6 +1,6 @@
 # -*- mode: snippet; require-final-newline: nil -*-
-# name: ctrltest
-# key: ctrltest
+# name: ngct
+# key: ngct
 # --
 'use strict';
 
@@ -13,12 +13,12 @@ describe('$1', function () {
         httpMock = $httpBackend;
         scope = $rootScope.$new();
 
-        $1$2 = $controller('$1', {
+        $1$0 = $controller('$1', {
             $scope: scope
         });
     }));
 
-    it('should $0', function () {
+    it('should $2', function () {
 
     });
 });
