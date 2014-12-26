@@ -4,7 +4,7 @@
 # binding: direct-keybinding
 # --
 
-my $filename = "$1";
-open (my $fh, "<", $filename);
+my $filename = '$1';
+open (my $fh, '<', $filename);
 my (@file) = <$fh>;
 close ($fh);
