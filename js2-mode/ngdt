@@ -3,6 +3,8 @@
 # key: ngdt
 # binding: direct-keybinding
 # --
+'use strict';
+
 describe('$1 directive', () => {
     var elm,
         scope;
@@ -13,7 +15,7 @@ describe('$1 directive', () => {
     beforeEach(inject( ($compile, $rootScope) => {
         elm = angular.element($2);
         scope = $rootScope;
-        compile(elm)(scope);
+        $compile(elm)(scope);
         scope.$digest();
     }));
 
