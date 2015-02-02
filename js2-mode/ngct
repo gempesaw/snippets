@@ -5,20 +5,26 @@
 'use strict';
 
 describe('$1', function () {
-    var httpMock, scope, $1;
+    var scope,
+        httpMock,
+        stateParams,
+        $1;
 
     beforeEach(module('honeydew'));
 
     beforeEach(inject(function ($controller, $rootScope, $httpBackend) {
-        httpMock = $httpBackend;
         scope = $rootScope.$new();
+        httpMock = $httpBackend;
+
+        stateParams = {};
 
         $1$0 = $controller('$1', {
-            $scope: scope
+            $scope: scope,
+            $stateParams: stateParams
         });
     }));
 
-    it('should $2', function () {
-
+    it('should $2', () => {
+        $3
     });
 });
