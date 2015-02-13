@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: say
+# key: say
+# binding: direct-keybinding
+# --
+use feature qw/say/;
+say '$0';
