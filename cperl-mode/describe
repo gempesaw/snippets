@@ -1,0 +1,13 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: describe
+# key: describe
+# binding: direct-keybinding
+# --
+describe '$1' => sub {
+    my ($2);
+    before each => sub {
+        $3
+    };
+
+    it$0
+};
