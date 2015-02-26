@@ -4,4 +4,4 @@
 # binding: direct-keybinding
 # --
 use feature qw/say/;
-say '$0';
+say '$1: ' . \$$1;$0
