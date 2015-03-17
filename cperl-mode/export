@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: export
+# key: export
+# binding: direct-keybinding
+# --
+require Exporter;
+our @ISA = qw/Exporter/;
+our @EXPORT_OK = qw/$0/;
