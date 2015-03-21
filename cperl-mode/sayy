@@ -1,7 +1,7 @@
 # -*- mode: snippet; require-final-newline: nil -*-
-# name: say
-# key: say
+# name: sayy
+# key: sayy
 # binding: direct-keybinding
 # --
 use feature qw/say/;
-say '$0';
+say '$1: ' . \$$1;$0
