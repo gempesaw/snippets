@@ -1,0 +1,17 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: ngst
+# key: ngst
+# binding: direct-keybinding
+# --
+describe('$1', function () {
+    'use strict';
+
+    var $1;
+
+    beforeEach(module('honeydew'));
+    beforeEach(inject(function (_$1_) {
+        $1 = _$1_;
+    }));
+
+    it$0
+});
