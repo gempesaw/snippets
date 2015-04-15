@@ -6,7 +6,7 @@
 
 use strict;
 use warnings;
-use Test::More;
+use Test::Spec;
 
 BEGIN: {
     unless (use_ok('$1')) {
@@ -15,6 +15,6 @@ BEGIN: {
     }
 }
 
-$0
+describe$0
 
-done_testing;
+runtests;
