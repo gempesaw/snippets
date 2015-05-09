@@ -2,8 +2,6 @@
 # name: ngct
 # key: ngct
 # --
-'use strict';
-
 describe('$1', function () {
     var scope,
         httpMock,

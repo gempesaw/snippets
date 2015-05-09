@@ -4,8 +4,6 @@
 # binding: direct-keybinding
 # --
 describe('$1', function () {
-    'use strict';
-
     var $1;
 
     beforeEach(module('honeydew'));

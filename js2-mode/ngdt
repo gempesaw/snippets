@@ -3,8 +3,6 @@
 # key: ngdt
 # binding: direct-keybinding
 # --
-'use strict';
-
 describe('$1 directive', () => {
     var elm,
         scope;

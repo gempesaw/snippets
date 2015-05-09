@@ -4,6 +4,5 @@
 # --
 angular.module('$1')
     .filter('$2', function ($3) {
-        'use strict';
         $0
     });
