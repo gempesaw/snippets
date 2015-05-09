@@ -1,0 +1,15 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: ngs
+# key: ngs
+# binding: direct-keybinding
+# --
+class $1 {
+    constructor ($2) {
+        $0
+    }
+}
+
+$1.$inject = [ '$2' ];
+
+angular.module('honeydew')
+    .service('$1', $1);
