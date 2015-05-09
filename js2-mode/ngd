@@ -2,16 +2,25 @@
 # name: ngd
 # key: ngd
 # --
-'use strict';
+class $1Controller {
+    constructor ($3) {
+        $0
+    }
+};
+
+$1Controller.$inject = [ '$3' ];
 
 angular.module('honeydew')
-    .directive('$1', function ($2) {
+    .directive('${1:$(replace-regexp-in-string "^." #'downcase yas/text t)}', function () {
         return {
-            templateUrl: '',
+            templateUrl: 'components/${1:$(dg-camelcase-to-hyphen yas/text)}/${1:$(dg-camelcase-to-hyphen yas/text)}.html',
             replace: true,
             restrict: 'E',
-            link: function (scope, element, attrs) {
-                $0
-            }
+            scope: {
+                $2
+            },
+            bindToController: true,
+            controller: $1Controller,
+            controllerAs: '$1'
         };
     });

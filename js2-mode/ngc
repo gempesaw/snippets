@@ -3,9 +3,13 @@
 # key: ngc
 # binding: direct-keybinding
 # --
-'use strict';
+class $1Controller {
+    constructor ( $2 ) {
+        $0
+    }
+}
+
+$1Controller.$inject = [ '$2' ];
 
 angular.module('honeydew')
-    .controller('$1', function ($2) {
-        $0
-    });
+    .controller('$1Controller', $1Controller);
