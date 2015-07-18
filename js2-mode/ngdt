@@ -5,7 +5,8 @@
 # --
 describe('$1 directive', () => {
     var elm,
-        scope;
+        scope,
+        controller;
 
     beforeEach(module('honeydew'));
     beforeEach(module('tpl'));
@@ -15,6 +16,8 @@ describe('$1 directive', () => {
         scope = $rootScope;
         $compile(elm)(scope);
         scope.$digest();
+
+        controller = elm.isolateScope().$1;
     }));
 
     it$0
