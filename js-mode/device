@@ -1,0 +1,18 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: device
+# key: device
+# binding: direct-keybinding
+# --
+"$1": {
+        "user_agent": "$2",
+        "portrait": {
+            "height": $4,
+            "width": $3
+        },
+        "landscape": {
+            "height": $3,
+            "width": $4
+        }
+    }
+
+    $0
