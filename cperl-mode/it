@@ -3,6 +3,6 @@
 # key: it
 # binding: direct-keybinding
 # --
-it 'should $1' => sub {
-    $0
+it 'should $0' => sub {
+
 };
