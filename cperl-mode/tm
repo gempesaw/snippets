@@ -7,13 +7,7 @@
 use strict;
 use warnings;
 use Test::Spec;
-
-BEGIN: {
-    unless (use_ok('$1')) {
-        BAIL_OUT("Couldn't load $1");
-        exit;
-    }
-}
+use $1;
 
 describe$0
 
