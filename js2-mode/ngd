@@ -8,19 +8,16 @@ class $1Controller {
     }
 };
 
-$1Controller.$inject = [ '$3' ];
-
-angular.module('honeydew')
-    .directive('${1:$(replace-regexp-in-string "^." #'downcase yas/text t)}', function () {
-        return {
-            templateUrl: 'components/${1:$(dg-camelcase-to-hyphen yas/text)}/${1:$(dg-camelcase-to-hyphen yas/text)}.html',
-            replace: true,
-            restrict: 'E',
-            scope: {
-                $2
-            },
-            bindToController: true,
-            controller: $1Controller,
-            controllerAs: '$1'
-        };
-    });
+angular.module('honeydew').directive('${1:$(replace-regexp-in-string "^." #'downcase yas/text t)}', function () {
+    return {
+        templateUrl: 'components/${1:$(dg-camelcase-to-hyphen yas/text)}/${1:$(dg-camelcase-to-hyphen yas/text)}.html',
+        replace: true,
+        restrict: 'E',
+        scope: {
+            $2
+        },
+        bindToController: true,
+        controller: $1Controller,
+        controllerAs: '$1'
+    };
+});

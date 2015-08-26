@@ -9,7 +9,4 @@ class $1 {
     }
 }
 
-$1.$inject = [ '$2' ];
-
-angular.module('honeydew')
-    .service('$1', $1);
+angular.module('honeydew').service('$1', $1);

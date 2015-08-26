@@ -3,11 +3,11 @@
 # key: ngst
 # binding: direct-keybinding
 # --
-describe('$1', function () {
-    var $1;
+fdescribe('$1', function () {
+    let $1;
 
     beforeEach(module('honeydew'));
-    beforeEach(inject(function (_$1_) {
+    beforeEach(inject(( _$1_ ) => {
         $1 = _$1_;
     }));
 
