@@ -3,10 +3,10 @@
 # key: ngct
 # --
 describe('$1', function () {
-    var scope,
-        httpMock,
-        stateParams,
-        $1;
+    let scope;
+    let httpMock;
+    let stateParams;
+    let $1;
 
     beforeEach(module('honeydew'));
 

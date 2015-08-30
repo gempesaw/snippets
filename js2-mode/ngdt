@@ -4,20 +4,20 @@
 # binding: direct-keybinding
 # --
 describe('$1 directive', () => {
-    var elm,
-        scope,
-        controller;
+    let elm;
+    let ctrl;
+    let scope;
 
     beforeEach(module('honeydew'));
     beforeEach(module('tpl'));
 
-    beforeEach(inject( ($compile, $rootScope) => {
-        elm = angular.element($2);
+    beforeEach(inject( ( $compile, $rootScope ) => {
+        elm = angular.element('<${1:$(dg-camelcase-to-hyphen yas/text)}></${1:$(dg-camelcase-to-hyphen yas/text)}>');
         scope = $rootScope;
         $compile(elm)(scope);
         scope.$digest();
 
-        controller = elm.isolateScope().$1;
+        ctrl = elm.isolateScope().$1;
     }));
 
     it$0
