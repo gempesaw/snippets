@@ -2,7 +2,7 @@
 # name: rule
 # key: rule
 # --
-=head2 $1
+=head3 $1
 
 $2
 
