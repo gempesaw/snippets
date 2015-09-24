@@ -6,7 +6,7 @@ class $1Controller {
     constructor ($3) {
         $0
     }
-};
+}
 
 angular.module('honeydew').directive('${1:$(replace-regexp-in-string "^." #'downcase yas/text t)}', function () {
     return {
