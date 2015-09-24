@@ -2,8 +2,6 @@
 # name: tm
 # key: tm
 # --
-#! /usr/bin/perl
-
 use strict;
 use warnings;
 use Test::Spec;

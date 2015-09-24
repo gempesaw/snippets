@@ -1,7 +1,5 @@
 # name: sw
 # key: sw
 # --
-#! /usr/bin/perl
-
 use strict;
 use warnings;
