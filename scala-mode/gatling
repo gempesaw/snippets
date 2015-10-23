@@ -1,0 +1,37 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: gatling
+# key: gatling
+# binding: direct-keybinding
+# --
+package com.sharecare$1
+
+import scala.concurrent.duration._
+import io.gatling.core.Predef._
+import io.gatling.http.Predef._
+
+class $2 extends Simulation {
+  val baseUrl = System.getProperty("gatling.env", "$0")
+  val httpConf = http
+    .baseURL(baseUrl)
+
+  val ${2:$(replace-regexp-in-string "^." #'downcase yas/text t)} = scenario(s"$2 $baseUrl")
+    .exec($2.$3)
+
+  val users = Integer.getInteger("gatling.users", 1).toInt
+  setUp(${2:$(replace-regexp-in-string "^." #'downcase yas/text t)}.inject(
+    atOnceUsers(users)
+  ))
+    .protocols(httpConf)
+    .assertions(
+    global.successfulRequests.percent.greaterThan(97)
+  )
+
+}
+
+object $2 {
+
+  val $3 = exec(
+      http("$3")
+  )
+
+}
