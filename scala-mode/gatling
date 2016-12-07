@@ -11,15 +11,18 @@ import io.gatling.http.Predef._
 
 class $2 extends Simulation {
   val baseUrl = System.getProperty("gatling.env", "$0")
+  val users = Integer.getInteger("gatling.users", 1).toDouble
+
   val httpConf = http
     .baseURL(baseUrl)
 
   val ${2:$(replace-regexp-in-string "^." #'downcase yas/text t)} = scenario(s"$2 $baseUrl")
     .exec($2.$3)
 
-  val users = Integer.getInteger("gatling.users", 1).toInt
+
   setUp(${2:$(replace-regexp-in-string "^." #'downcase yas/text t)}.inject(
     atOnceUsers(users)
+    // constantUsersPerSec(users) during duration
   ))
     .protocols(httpConf)
     .assertions(
