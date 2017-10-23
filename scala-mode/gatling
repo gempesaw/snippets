@@ -9,8 +9,7 @@ import io.gatling.http.Predef._
 
 class $2 extends Simulation {
   val baseUrl = System.getProperty("gatling.env", "$4")
-  val requests = 1
-  val rps = Integer.getInteger("gatling.rps", 1).toDouble / requests
+  val rps = Integer.getInteger("gatling.rps", 1).toDouble
   val duration = Integer.getInteger("gatling.duration", 30).seconds
 
   val httpConf = http
@@ -19,10 +18,10 @@ class $2 extends Simulation {
   val ${2:$(replace-regexp-in-string "^." #'downcase yas/text t)} = scenario(s"$2 $baseUrl")
     .exec($2.$3)
 
-
+  val requests = 1
   setUp(${2:$(replace-regexp-in-string "^." #'downcase yas/text t)}.inject(
     atOnceUsers(1)
-    // constantUsersPerSec(rps) during duration
+    // constantUsersPerSec(rps / requests) during duration
   ))
     .protocols(httpConf)
     .assertions(
