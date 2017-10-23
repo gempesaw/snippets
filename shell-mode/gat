@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: gat
+# key: gat
+# --
+JAVA_OPTS="-Dgatling.rps=10 -Dgatling.duration=180" npm run loadtest > 10rps.log 2>&1 && \
+sleep 60 && \
+JAVA_OPTS="-Dgatling.rps=20 -Dgatling.duration=180" npm run loadtest > 20rps.log 2>&1 && \
+sleep 60 && \
+JAVA_OPTS="-Dgatling.rps=30 -Dgatling.duration=180" npm run loadtest > 30rps.log 2>&1

@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: chai
+# key: chai
+# --
+const { expect } = require('chai');
+// const td = require('testdouble');
+const $1 = require('$2');
+
+describe('$3', () => {
+  bef$4
+
+  it$0
+});
