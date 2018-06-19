@@ -1,0 +1,28 @@
+# -*- mode: snippet -*-
+# name: roydme
+# key: roydme
+# --
+# $1 [![Build Status](https://drone.admin.sharecare.com/api/badges/Sharecare/$1/status.svg)](https://drone.admin.sharecare.com/Sharecare/$1)
+
+$1 is $2
+
+## Installation
+
+$3
+
+## Inputs
+
+$4
+
+## Outputs
+
+$5
+
+## Dependency or Notable Interaction
+
+$6
+
+## More Information
+
+$7
+$0Swagger URL, Wiki URL, Jira Project, Tech Docs, How To Guides
