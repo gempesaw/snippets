@@ -1,0 +1,31 @@
+# -*- mode: snippet -*-
+# name: comp
+# key: comp
+# --
+import React, { Component } from 'react';
+import { $1 } from 'semantic-ui-react';
+// import { withQueryReplacer } from '../util';
+
+class $2 extends Component {
+  static defaultProps = {
+
+  }
+
+  state = {
+    $0
+  }
+
+  componentDidMount() {}
+
+  componentDidUpdate() {}
+
+  render() {
+    return (
+      <React.Fragment>
+         lorem ipsum
+      </React.Fragment>
+    );
+  }
+}
+
+export default $2;

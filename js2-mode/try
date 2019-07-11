@@ -5,6 +5,6 @@
 try {
   $0
 }
-catch (err) {
-  throw new $1(err);
+catch ($1) {
+
 }
