@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: pd-pr
+# key: pd
+# --
+## Overview [$1](https://pagerduty.atlassian.net/browse/$1)
+
+$2
+
+## Changes
+
+- $3
+
+## Risks
+
+- $4
+
+## Testing
+
+- [ ] $0

@@ -1,0 +1,7 @@
+# key: helm
+# name: helm
+# --
+# uncomment to see k8s manifests diff
+  experiments {
+    manifest = true
+  }

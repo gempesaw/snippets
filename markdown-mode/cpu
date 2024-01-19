@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: cpu
+# key: cpu
+# --
+{{ cookiecutter.pagerduty_username }}$0

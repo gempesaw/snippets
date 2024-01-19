@@ -1,0 +1,49 @@
+# key: monitor
+# name: monitor
+# --
+module "monitor_common" {
+  source     = "../common"
+  parameters = var.parameters
+}
+
+resource "datadog_monitor" "$1" {
+  name                = "\${module.monitor_common.title} $0"
+  type                = "metric alert"
+  query               = <<-EOT
+  EOT
+  message             = <<-EOT
+  {{#is_alert}}
+
+  \${var.message}
+  \${module.monitor_common.triage_message}
+  {{/is_alert}}
+
+  {{#is_recovery}}
+  {{/is_recovery}}
+
+  Environment: \`\${var.environment}\`
+  Cluster: \`{{cluster_name.name}}\`
+  Namespace: \`{{kube_namespace.name}}\`
+  Container: \`{{kube_container_name.name}}\`
+
+  Notify: \${var.notify_handle}
+  EOT
+  notify_no_data      = false
+  notify_audit        = false
+  require_full_window = false
+  enable_logs_sample  = false
+  force_delete        = true
+  include_tags        = false
+  locked              = false
+  renotify_interval   = 30
+  timeout_h           = 0
+  evaluation_delay    = 60
+  new_group_delay     = 300
+  no_data_timeframe   = 10
+
+  monitor_thresholds {
+    critical = var.critical_threshold
+  }
+
+  tags = module.monitor_common.tags
+}

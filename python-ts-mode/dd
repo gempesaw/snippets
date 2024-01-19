@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dd
+# key: dd
+# --
+import json
+print(json.dumps($0, indent=4))

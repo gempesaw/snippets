@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: logging
+# key: l
+# --
+import logging
+logger = logging.getLogger('pd-kubectx')

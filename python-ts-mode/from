@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: from
+# key: from
+# --
+from pd_kubectx_cli import $0
